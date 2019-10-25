@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h1>нажмите кнопку</h1>
+    <img id="moodle-logo" src="https://www.elearningfacil.com/wp-content/uploads/2015/05/moodle-logo-4045x1000.jpg">
+
+</body>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Impact;
+        }
+    
+        img {
+            width: 300px;
+            height: 180px;
+            display: block;
+            margin: auto;
+    
+            animation-name: giro;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    
+        img:hover {
+            transform: scale(1.2, 1.2);
+        }
+    
+        @keyframes giro {
+            0% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+<script>
+
+const foto = document.querySelector("img");
+
+foto.addEventListener("click", function(){
+    window.location = "http://C0/moodle2";
+},false);
+
+
+
+</script>
+</html>
